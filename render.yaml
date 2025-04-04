@@ -1,0 +1,5 @@
+buildCommand: |
+  pip install -r requirements.txt
+  pip install playwright
+  playwright install chromium
+startCommand: python app.py
