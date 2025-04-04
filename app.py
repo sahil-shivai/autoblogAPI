@@ -8,8 +8,6 @@ from scrapper import get_blog_titles
 from blog_generator import generate_blog
 from supabase_client import save_blog, get_all_blogs  # Added get_all_blogs function
 
-# Install Playwright dependencies (ensures browser installation)
-subprocess.run(["playwright", "install", "--with-deps"], check=True)
 
 # Keywords for blog generation
 KEYWORDS = ["Python", "Web Development",
