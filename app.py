@@ -82,6 +82,5 @@ def start_scheduler():
 
 # Main Entry Point
 if __name__ == "__main__":
-    # Run scheduler in background thread
     threading.Thread(target=start_scheduler).start()
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True)
