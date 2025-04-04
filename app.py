@@ -8,6 +8,9 @@ from scrapper import get_blog_titles
 from blog_generator import generate_blog
 # from image_fetcher import fetch_image  # Disabled for now
 from supabase_client import save_blog, get_all_blogs  # Add get_all_blogs function
+import subprocess
+
+subprocess.run(["playwright", "install", "--with-deps"], check=True)
 
 # Keywords for generation
 KEYWORDS = ["Python", "Web Development",
